@@ -82,7 +82,7 @@
         if ( orgEvent.wheelDelta ) { delta = orgEvent.wheelDelta; }
         if ( orgEvent.detail )     { delta = orgEvent.detail * -1; }
 
-        if ( orgEvent.deltaY == undefined )   /* Nick Uspalenko 7/29/2013 fix for IE8 */
+        if ( orgEvent.deltaY === undefined )   /* Nick Uspalenko 7/29/2013 fix for IE8 */
             deltaY = delta;                /* */
 
         // New school wheel delta (wheel event)
